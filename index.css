@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: white;
+    color: #232323;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: wheat;
+    z-index: 1;
+  }
+  
+  nav h1 {
+    margin: 0 auto;
+    padding: 16px 24px;
+    max-width: 1100px;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  main {
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 24px 24px 0px 24px;
+  }
+  
+  header {
+    margin-top: 24px;
+  }
+  
+  section {
+    margin-top: 48px;
+    width: 100%;
+  }
+  
+  section h2 {
+    font-family: 'EB Garamond', sans-serif;
+    border-bottom: 2px solid black;
+  }
+  
+  .colors .container-colors {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 16px 0px;
+  }
+  
+  .fonts .container-fonts,
+  .styles .container-styles {
+    display: block;
+    padding: 16px 0px;
+  }
+  
+  .card {
+    position: relative;
+    width: 225px;
+    height: 225px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .card .reference {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px 16px;
+    background: white;
+    font-size: 16px;
+  }
+  
+  .container-colors .wrapper-card {
+    margin: 0 16px 24px 0;
+  }
+  
+  .container-colors .card .reference div {
+    margin-bottom: 4px;
+  }
+  
+  .container-colors .card .reference .reference-name {
+    font-weight: bold;
+  }
+  
+  .container-colors .card .reference .reference-code,
+  .container-colors .card .reference .reference-rgb,
+  .container-colors .card .reference .reference-hsl {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .container-colors .wrapper-card .card-note {
+    padding-top: 8px;
+    font-family: 'EB Garamond', sans-serif;
+    font-size: 14px;
+    color: #878787;
+  }
+  
+  .container-colors .card.card-one {
+    background-color: #b3296d;
+  }
+  
+  .container-colors .card.card-two {
+    background-color: #f5ead9;
+  }
+  
+  .container-colors .card.card-three {
+    background-color: #f6f6f6;
+  }
+  
+  .container-colors .card.card-four {
+    background-color: #808080;
+  }
+  
+  .container-colors .card.card-five {
+    background-color: #1a1f1f;
+  }
+  
+  .container-fonts .wrapper-card {
+    margin: 0 16px 24px 0;
+  }
+  
+  .container-fonts .card {
+    width: 100%;
+    height: auto;
+    padding: 8px 16px;
+  }
+  
+  .container-fonts .card-one .font {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+  }
+  
+  .container-fonts .card-two .font {
+    font-family: 'EB Garamond', sans-serif;
+    font-size: 18px;
+  }
+  
+  .container-fonts .card-three .font {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 16px;
+  }
+  
+  .container-fonts .card .font-header {
+    margin-bottom: 12px;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .container-fonts .card.card-three .font-header {
+    font-size: 14px;
+  }
+  
+  .container-fonts .card .font-sample {
+    margin-bottom: 8px;
+  }
+  
+  .container-fonts .card .font-sample:nth-of-type(3) {
+    font-weight: bold;
+  }
+  
+  .container-fonts .card .font-sample:last-of-type {
+    font-style: italic;
+  }
+  
+  .styles {
+    margin-bottom: 120px;
+  }
+  
+  .container-styles .wrapper-card {
+    margin: 0 16px 24px 0;
+    font-family: 'EB Garamond', serif;
+    font-size: 16px;
+    letter-spacing: -0.25px;
+  }
+  
+  .container-styles .card {
+    width: 100%;
+    height: auto;
+    padding: 8px 16px;
+    border: none;
+  }
+  
+  .container-styles .card .styles-list {
+    padding-left: 24px;
+    color: #646464;
+  }
+  
+  .container-styles .card-one .styles-header {
+    font-size: 64px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    margin-bottom: 8px;
+  }
+
+  .container-styles .card-two .styles-header {
+    font-size: 48px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    margin-bottom: 8px;
+  }
+  
+  .container-styles .card-three .styles-header {
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  
+  .container-styles .card-four .styles-header {
+    font-size: 18;
+    font-family: 'EB Garamond', sans-serif;
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    padding: 16px 0;
+    width: 100%;
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    background-color: wheat;
+  }
